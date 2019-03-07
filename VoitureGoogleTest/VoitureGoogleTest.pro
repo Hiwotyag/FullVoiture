@@ -7,7 +7,8 @@ CONFIG += thread
 
 HEADERS += \
     tst_testvoitureconstructor.h \
-    tst_testvoitureroule.h
+    tst_testvoitureroule.h \
+    tst_testpilote.h
 
 SOURCES += \
         main.cpp
