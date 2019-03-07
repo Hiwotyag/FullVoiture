@@ -106,7 +106,7 @@ TEST_P(TestVoitureRecenteRouler, Range) // Test_p est un test avec paramètres
 
 INSTANTIATE_TEST_SUITE_P(GroupeVoitureRecente,
                          TestVoitureRecenteRouler,
-                         Values(0,10000,149999,150000,150001)
+                         Values(0,10000,149999)
                          //Range (0, 150000,10000)
                          );
 // Premier label doit être le nom de tout les test
