@@ -13,6 +13,7 @@ using namespace testing;
 TEST(TestPiloteConstructor, Default)
 //Default est ce que l'on appel un set name
 {
-    //toDO
+    Pilote pilote;
+    //todo
     ASSERT_TRUE(false);
 }
