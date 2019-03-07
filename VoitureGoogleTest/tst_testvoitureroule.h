@@ -158,11 +158,13 @@ TEST_F(TestOldVoitureRouler, OK) // Test_f est un test avec fixture
 TEST_F(TestOldVoitureRouler, NoGaz) // Test_f est un test avec fixture
 {
     //given
-    int distance = 100;
+    int distance = 200;
 
     //when
     oldCar.rouler(distance);
     EXPECT_THROW(oldCar.rouler(distance), std::invalid_argument);
+    EXPECT_THAT(oldCar.kilometrage(), Eq(kmStart));
+    EXPECT_THAT(oldCar.jaugeCarburant(), Eq(jaugeStart));
 }
 
 
