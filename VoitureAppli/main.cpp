@@ -8,6 +8,7 @@ int main(int argc, char *argv[])
     QCoreApplication a(argc, argv);
     qDebug()<<"Welcome to Voiture Application";
     Voiture oldCar("Ford Mustang 1967", 160000, 500);
+    oldCar.rouler(10);
     qDebug()<<"My car:" << oldCar.modele();
     return a.exec();
 }
